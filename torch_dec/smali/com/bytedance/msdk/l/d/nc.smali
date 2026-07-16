@@ -1,0 +1,136 @@
+.class public Lcom/bytedance/msdk/l/d/nc;
+.super Lcom/bytedance/msdk/l/d/t;
+
+
+# instance fields
+.field private d:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 18
+    invoke-direct {p0, v0}, Lcom/bytedance/msdk/l/d/t;-><init>(Lcom/bytedance/msdk/api/t/iy;)V
+
+    .line 19
+    invoke-virtual {p0}, Lcom/bytedance/msdk/l/d/nc;->wc()Lcom/bytedance/msdk/core/iy/d;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 21
+    invoke-virtual {v0}, Lcom/bytedance/msdk/core/iy/d;->d()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/bytedance/msdk/l/d/nc;->d:Ljava/lang/String;
+
+    :cond_0
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/bytedance/msdk/api/t/iy;)V
+    .locals 0
+
+    .line 27
+    invoke-direct {p0, p1}, Lcom/bytedance/msdk/l/d/t;-><init>(Lcom/bytedance/msdk/api/t/iy;)V
+
+    if-eqz p1, :cond_0
+
+    .line 29
+    invoke-virtual {p1}, Lcom/bytedance/msdk/api/t/iy;->pl()Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/bytedance/msdk/l/d/nc;->d:Ljava/lang/String;
+
+    :cond_0
+    return-void
+.end method
+
+
+# virtual methods
+.method protected d()Ljava/util/Map;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .line 35
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    const-string v1, "app_id"
+
+    .line 36
+    iget-object v2, p0, Lcom/bytedance/msdk/l/d/nc;->d:Ljava/lang/String;
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method protected j()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "gdt"
+
+    return-object v0
+.end method
+
+.method protected pl()Ljava/lang/String;
+    .locals 1
+
+    .line 47
+    iget-object v0, p0, Lcom/bytedance/msdk/l/d/nc;->d:Ljava/lang/String;
+
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 48
+    invoke-virtual {p0}, Lcom/bytedance/msdk/l/d/nc;->wc()Lcom/bytedance/msdk/core/iy/d;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 50
+    invoke-virtual {v0}, Lcom/bytedance/msdk/core/iy/d;->d()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/bytedance/msdk/l/d/nc;->d:Ljava/lang/String;
+
+    .line 52
+    :cond_0
+    iget-object v0, p0, Lcom/bytedance/msdk/l/d/nc;->d:Ljava/lang/String;
+
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const-string v0, "appId\u4e3a\u7a7a"
+
+    return-object v0
+
+    :cond_1
+    const-string v0, ""
+
+    return-object v0
+.end method

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16.0dp</dimen>
+    <dimen name="anim_img_h">45.0dp</dimen>
+    <dimen name="camera_album_btn_size">50.0dp</dimen>
+    <dimen name="camera_back_btn_size">50.0dp</dimen>
+    <dimen name="camera_btn_size">74.0dp</dimen>
+    <dimen name="color_item_h">57.0dp</dimen>
+    <dimen name="color_item_margin_h">23.0dp</dimen>
+    <dimen name="color_item_margin_v">16.0dp</dimen>
+    <dimen name="color_item_w">48.0dp</dimen>
+    <dimen name="color_layout_h">217.0dp</dimen>
+    <dimen name="main_btn_h">120.0dp</dimen>
+    <dimen name="main_btn_margin">15.0dp</dimen>
+    <dimen name="main_btn_w">120.0dp</dimen>
+    <dimen name="main_fragment_margin_title">14.0dp</dimen>
+    <dimen name="main_text_margin">15.0dp</dimen>
+    <dimen name="main_top_ry">299.0dp</dimen>
+    <dimen name="mode_item_bg_h">84.0dp</dimen>
+    <dimen name="mode_item_bg_margin">7.0dp</dimen>
+    <dimen name="mode_item_img_size">34.0dp</dimen>
+    <dimen name="mode_margin_top">18.0dp</dimen>
+    <dimen name="other_color_ly_padding_bottom">30.0dp</dimen>
+    <dimen name="other_color_txt_margin_bottom">10.0dp</dimen>
+    <dimen name="other_line_margin_top">10.0dp</dimen>
+    <dimen name="tab_height">60.0dp</dimen>
+    <dimen name="title_height">53.0dp</dimen>
+</resources>

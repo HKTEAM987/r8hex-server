@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/p_top_text" android:background="@drawable/praise_top_text_bg" android:layout_width="140.0dp" android:layout_height="80.0dp" android:layout_marginTop="20.0dp" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/l_top" android:background="@drawable/dialog_privacy_bg_border" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dp" android:layout_marginTop="80.0dp" android:layout_marginRight="26.0dp" android:layout_alignTop="@id/p_top">
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:layout_gravity="center" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="55.0dp" android:text="如果您觉得我们做的还不错,\n请给我们个好评鼓励一下吧!" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginStart="15.0dp">
+            <ImageView android:id="@id/understand_img" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/sel_nor" />
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/darker_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我已了解，并不再提示" android:layout_marginStart="10.0dp" />
+        </LinearLayout>
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/praise_ok" android:background="@drawable/shi" android:layout_width="216.0dp" android:layout_height="38.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="25.0dp" android:layout_marginRight="20.0dp" android:text="赞！五星鼓励" />
+        <TextView android:textSize="18.0sp" android:textColor="#b8b8b8" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/praise_no" android:background="@drawable/fou" android:layout_width="216.0dp" android:layout_height="38.0dp" android:layout_margin="20.0dp" android:text="下次再说" />
+    </LinearLayout>
+    <ImageView android:id="@id/p_top" android:background="@drawable/praise_top_bg" android:layout_width="120.0dp" android:layout_height="120.0dp" android:layout_marginTop="70.0dp" android:layout_alignTop="@id/p_top_text" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/praise_close" android:background="@drawable/icon_praise_close" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginTop="10.0dp" android:layout_below="@id/l_top" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">Mengenai</string>
+    <string name="app_name">Senter</string>
+    <string name="app_name_gq">Senter</string>
+    <string name="app_name_gqb">Senter</string>
+    <string name="app_name_js">Senter</string>
+    <string name="app_name_led">Senter</string>
+    <string name="app_name_ss">Senter</string>
+    <string name="click_back_return_app_home">Ketuk sekali lagi untuk kembali ke halaman utama</string>
+    <string name="color_lights">Lampu warna</string>
+    <string name="night_photo">Kamera mode malam</string>
+    <string name="not_support">Perangkat tidak mendukung LED atau kamera sedang digunakan. Silahkan gunakan penerangan lampu warna.</string>
+    <string name="rate_us">Penilaian</string>
+    <string name="recommend">Rekomendasi</string>
+    <string name="remaining_battery_can_time_HM">Sisa baterai dapat menerangi %1$s jam %2$s menit</string>
+    <string name="remaining_battery_can_time_HMs">Sisa baterai dapat menerangi %1$s jam %2$s menit</string>
+    <string name="remaining_battery_can_time_M">Sisa baterai dapat menerangi %1$s menit</string>
+    <string name="remaining_battery_can_time_Ms">Sisa baterai dapat menerangi %1$s menit</string>
+    <string name="sos_lights">SOS</string>
+    <string name="tool_box">Toolbox</string>
+</resources>

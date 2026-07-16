@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/color_mobile_guards_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_start_clean" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="32.0dp" android:textColor="@android:color/white" android:id="@id/id_tv_cache_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" /> /> 
+        <TextView android:textSize="30.0dp" android:textColor="#dfe9ff" android:id="@id/id_tv_completed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29.0dp" android:text="已完成0%" android:layout_below="@id/id_tv_cache_size" />
+        <TextView android:textSize="30.0dp" android:textColor="@android:color/white" android:id="@id/id_tv_scan_or_clean" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" android:text="@string/string_scanning_cache" android:layout_below="@id/id_tv_completed" />
+    </LinearLayout>
+    <ImageView android:id="@id/id_iv_scanning_bar" android:layout_width="360.0dp" android:layout_height="58.0dp" android:src="@drawable/img_scanning_bar" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/ll_clean_completed" android:background="@color/color_mobile_guards_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageView" android:layout_width="140.0dp" android:layout_height="140.0dp" android:layout_marginTop="35.0dp" android:layout_marginRight="25.0dp" android:layout_marginBottom="20.0dp" android:layout_toLeftOf="@id/tv_success_clean_cache_size" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginEnd="25.0dp" android:layout_toStartOf="@id/tv_success_clean_cache_size" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/tv_success_clean_cache_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dp" android:text="成功清理0MB" android:layout_alignLeft="@id/btn_finish" android:layout_alignTop="@id/imageView" android:layout_centerVertical="true" android:layout_alignStart="@id/btn_finish" />
+        <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/btn_finish" android:background="@drawable/selector_btn_mobile_clean_finish" android:layout_width="160.0dp" android:layout_height="26.0dp" android:layout_marginRight="13.0dp" android:layout_marginBottom="35.0dp" android:text="@string/string_complete" android:layout_alignBottom="@id/imageView" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ido_layout_guangdiantong" android:background="@drawable/btc_img_logo_default" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_below="@id/ll_clean_completed" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/ido_layout_gdt" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ListView android:layout_gravity="center_vertical" android:id="@id/ido_list_gdt" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20.0dp" android:layout_marginTop="20.0dp" android:divider="@null" android:dividerHeight="1.0px" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,202 @@
+.class Lcom/bytedance/embedapplog/sb;
+.super Lcom/bytedance/embedapplog/jt;
+
+
+# instance fields
+.field private final l:Lcom/bytedance/embedapplog/zj;
+
+.field private final nc:Landroid/content/Context;
+
+
+# direct methods
+.method constructor <init>(Landroid/content/Context;Lcom/bytedance/embedapplog/zj;)V
+    .locals 2
+
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    .line 24
+    invoke-direct {p0, v0, v1}, Lcom/bytedance/embedapplog/jt;-><init>(ZZ)V
+
+    .line 25
+    iput-object p1, p0, Lcom/bytedance/embedapplog/sb;->nc:Landroid/content/Context;
+
+    .line 26
+    iput-object p2, p0, Lcom/bytedance/embedapplog/sb;->l:Lcom/bytedance/embedapplog/zj;
+
+    return-void
+.end method
+
+.method private static d(Landroid/content/Context;)Ljava/lang/String;
+    .locals 3
+
+    const/4 v0, 0x0
+
+    if-nez p0, :cond_0
+
+    return-object v0
+
+    .line 48
+    :cond_0
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x1a
+
+    if-lt v1, v2, :cond_1
+
+    .line 49
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+
+    move-result-object p0
+
+    iget p0, p0, Landroid/content/pm/ApplicationInfo;->targetSdkVersion:I
+
+    if-lt p0, v2, :cond_1
+
+    .line 51
+    :try_start_0
+    invoke-static {}, Landroid/os/Build;->getSerial()Ljava/lang/String;
+
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 56
+    :catchall_0
+    :cond_1
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result p0
+
+    const-string v1, "unknown"
+
+    if-nez p0, :cond_2
+
+    .line 57
+    invoke-static {v0, v1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_3
+
+    .line 58
+    :cond_2
+    sget-object v0, Landroid/os/Build;->SERIAL:Ljava/lang/String;
+
+    .line 60
+    :cond_3
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result p0
+
+    if-nez p0, :cond_5
+
+    .line 61
+    invoke-static {v0, v1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_4
+
+    goto :goto_0
+
+    :cond_4
+    return-object v0
+
+    :cond_5
+    :goto_0
+    const-string p0, ""
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method protected d(Lorg/json/JSONObject;)Z
+    .locals 2
+
+    const-string v0, "os"
+
+    const-string v1, "Android"
+
+    .line 32
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v0, "os_version"
+
+    .line 33
+    sget-object v1, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
+
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v0, "os_api"
+
+    .line 34
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    const-string v0, "device_model"
+
+    .line 35
+    invoke-static {}, Lcom/bytedance/embedapplog/sm;->pl()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v0, "device_brand"
+
+    .line 36
+    sget-object v1, Landroid/os/Build;->BRAND:Ljava/lang/String;
+
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v0, "device_manufacturer"
+
+    .line 37
+    sget-object v1, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
+
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v0, "cpu_abi"
+
+    .line 38
+    sget-object v1, Landroid/os/Build;->CPU_ABI:Ljava/lang/String;
+
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 39
+    iget-object v0, p0, Lcom/bytedance/embedapplog/sb;->l:Lcom/bytedance/embedapplog/zj;
+
+    invoke-virtual {v0}, Lcom/bytedance/embedapplog/zj;->st()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/bytedance/embedapplog/sb;->nc:Landroid/content/Context;
+
+    invoke-static {v0}, Lcom/bytedance/embedapplog/sb;->d(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, p0, Lcom/bytedance/embedapplog/sb;->l:Lcom/bytedance/embedapplog/zj;
+
+    invoke-virtual {v0}, Lcom/bytedance/embedapplog/zj;->sv()Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_0
+    const-string v1, "build_serial"
+
+    invoke-virtual {p1, v1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const/4 p1, 0x1
+
+    return p1
+.end method

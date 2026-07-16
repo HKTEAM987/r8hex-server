@@ -1,0 +1,85 @@
+.class Lcom/bytedance/d/j/nc/d/d;
+.super Lcom/bytedance/d/j/nc/d/pl;
+
+
+# direct methods
+.method constructor <init>(Landroid/content/Context;Lcom/bytedance/d/j/nc/d/j;Lcom/bytedance/d/j/nc/d/t;)V
+    .locals 1
+
+    .line 22
+    sget-object v0, Lcom/bytedance/d/j/pl;->t:Lcom/bytedance/d/j/pl;
+
+    invoke-direct {p0, v0, p1, p2, p3}, Lcom/bytedance/d/j/nc/d/pl;-><init>(Lcom/bytedance/d/j/pl;Landroid/content/Context;Lcom/bytedance/d/j/nc/d/j;Lcom/bytedance/d/j/nc/d/t;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public d(Lcom/bytedance/d/j/pl/d;)Lcom/bytedance/d/j/pl/d;
+    .locals 3
+
+    .line 27
+    invoke-super {p0, p1}, Lcom/bytedance/d/j/nc/d/pl;->d(Lcom/bytedance/d/j/pl/d;)Lcom/bytedance/d/j/pl/d;
+
+    move-result-object p1
+
+    .line 29
+    iget-object v0, p0, Lcom/bytedance/d/j/nc/d/d;->j:Landroid/content/Context;
+
+    invoke-static {v0}, Lcom/bytedance/d/j/pl/j;->d(Landroid/content/Context;)Lcom/bytedance/d/j/pl/j;
+
+    move-result-object v0
+
+    .line 31
+    invoke-static {}, Lcom/bytedance/d/j/m;->d()Lcom/bytedance/d/j/nc/d;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/bytedance/d/j/nc/d;->d()Ljava/util/Map;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/bytedance/d/j/pl/j;->d(Ljava/util/Map;)Lorg/json/JSONObject;
+
+    .line 33
+    invoke-static {}, Lcom/bytedance/d/j/m;->pl()Lcom/bytedance/d/j/nc/m;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/bytedance/d/j/nc/m;->d()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/bytedance/d/j/pl/j;->d(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    .line 34
+    iget-object v1, p0, Lcom/bytedance/d/j/nc/d/d;->pl:Lcom/bytedance/d/j/nc;
+
+    invoke-interface {v1}, Lcom/bytedance/d/j/nc;->pl()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/bytedance/d/j/pl/j;->j(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    .line 35
+    invoke-virtual {p1, v0}, Lcom/bytedance/d/j/pl/d;->d(Lcom/bytedance/d/j/pl/j;)Lcom/bytedance/d/j/pl/d;
+
+    .line 36
+    iget-object v1, p0, Lcom/bytedance/d/j/nc/d/d;->j:Landroid/content/Context;
+
+    invoke-static {v1}, Lcom/bytedance/d/j/m/d;->t(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "process_name"
+
+    invoke-virtual {p1, v2, v1}, Lcom/bytedance/d/j/pl/d;->d(Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 37
+    iget-object v1, p0, Lcom/bytedance/d/j/nc/d/d;->d:Lcom/bytedance/d/j/pl;
+
+    invoke-static {p1, v0, v1}, Lcom/bytedance/d/j/m/iy;->d(Lcom/bytedance/d/j/pl/d;Lcom/bytedance/d/j/pl/j;Lcom/bytedance/d/j/pl;)V
+
+    return-object p1
+.end method

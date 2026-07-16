@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/about_layout" android:background="#eaeaf4" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:paddingLeft="8.0dp" android:paddingTop="10.0dp" android:paddingRight="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" android:layout_alignParentStart="true">
+        <RelativeLayout android:orientation="vertical" android:id="@id/r1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_appwall" android:background="@drawable/img_appwall" android:visibility="gone" android:layout_width="420.0dp" android:layout_height="170.0dp" android:layout_alignParentTop="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/more_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_below="@id/img_appwall">
+                <RelativeLayout android:id="@id/sound_switch_layout" android:background="@android:color/white" android:padding="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dp">
+                    <TextView android:textSize="16.0sp" android:textColor="#555555" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dp" android:text="@string/sound" android:layout_centerVertical="true" android:layout_marginStart="18.0dp" />
+                    <ImageView android:id="@id/sound_img" android:layout_width="40.0dp" android:layout_height="30.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/switchclose_bg" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/shock_switch_layout" android:background="@android:color/white" android:padding="10.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dp">
+                    <TextView android:textSize="16.0sp" android:textColor="#555555" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dp" android:text="@string/shock" android:layout_centerVertical="true" android:layout_marginStart="18.0dp" />
+                    <ImageView android:textSize="20.0sp" android:id="@id/shock_img" android:layout_width="40.0dp" android:layout_height="30.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/switchclose_bg" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" />
+                </RelativeLayout>
+                <RelativeLayout android:background="@android:color/white" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dp">
+                    <TextView android:textSize="16.0sp" android:textColor="#555555" android:id="@id/more_info_about_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dp" android:text="@string/ido_versionname" android:layout_centerVertical="true" android:layout_marginStart="18.0dp" />
+                    <TextView android:textSize="16.0sp" android:textColor="#aaaaaa" android:id="@id/more_info_about_info_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dp" android:text="1.50215" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/contact_Layout" android:background="@android:color/white" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp">
+                    <TextView android:textSize="16.0sp" android:textColor="#555555" android:gravity="left" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dp" android:text="@string/contact_us" android:layout_weight="1.0" android:layout_marginStart="18.0dp" />
+                    <TextView android:textSize="14.0sp" android:textColor="@android:color/holo_blue_dark" android:gravity="right" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dp" android:text="feedback666@126.com" android:layout_weight="1.0" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/more_privacy_ry" android:background="@android:color/white" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dp">
+                    <TextView android:textSize="16.0sp" android:textColor="#555555" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dp" android:text="@string/about_privacy_policy" android:layout_marginStart="18.0dp" />
+                    <ImageView android:textSize="20.0sp" android:background="@drawable/turn" android:layout_width="15.0dp" android:layout_height="20.0dp" android:layout_marginRight="18.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="18.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/more_agreement_ry" android:background="@android:color/white" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dp">
+                    <TextView android:textSize="16.0sp" android:textColor="#555555" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dp" android:text="@string/about_agreement" android:layout_centerVertical="true" android:layout_marginStart="18.0dp" />
+                    <ImageView android:textSize="20.0sp" android:background="@drawable/turn" android:layout_width="15.0dp" android:layout_height="20.0dp" android:layout_marginRight="18.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="18.0dp" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/icp_layout" android:background="@android:color/white" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dp">
+                    <TextView android:textSize="16.0sp" android:textColor="#555555" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dp" android:text="@string/about_lib_icp" android:layout_centerVertical="true" android:layout_marginStart="18.0dp" />
+                    <TextView android:textSize="16.0sp" android:textColor="#aaaaaa" android:id="@id/icp_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dp" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/more_icon" android:layout_width="63.0dp" android:layout_height="63.0dp" android:layout_marginTop="30.0dp" android:layout_marginBottom="20.0dp" />
+                <TextView android:textSize="18.0dp" android:textColor="#333333" android:layout_gravity="center_horizontal" android:id="@id/more_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

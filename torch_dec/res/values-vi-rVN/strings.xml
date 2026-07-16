@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">Thông tin</string>
+    <string name="app_name">Đèn pin</string>
+    <string name="app_name_gq">Đèn pin</string>
+    <string name="app_name_gqb">Đèn pin</string>
+    <string name="app_name_js">Đèn pin</string>
+    <string name="app_name_led">Đèn pin</string>
+    <string name="app_name_ss">Đèn pin</string>
+    <string name="click_back_return_app_home">Click lần nữa để về giao diện chính</string>
+    <string name="color_lights">Đèn màu</string>
+    <string name="night_photo">Máy ảnh đêm</string>
+    <string name="not_support">Thiết bị này không hỗ trợ đèn LED hoặc camera đang bị chiếm dụng, hãy dùng chiếu sáng màu</string>
+    <string name="rate_us">Đánh giá</string>
+    <string name="recommend">Gợi ý sản phẩm</string>
+    <string name="remaining_battery_can_time_HM">Lượng pin đủ để chiếu sáng trong %1$s giờ %2$s phút</string>
+    <string name="remaining_battery_can_time_HMs">Lượng pin đủ để chiếu sáng trong %1$s giờ %2$s phút</string>
+    <string name="remaining_battery_can_time_M">Lượng pin đủ để chiếu sáng trong %1$s phút</string>
+    <string name="remaining_battery_can_time_Ms">Lượng pin đủ để chiếu sáng trong %1$s phút</string>
+    <string name="sos_lights">SOS</string>
+    <string name="tool_box">Công cụ</string>
+</resources>

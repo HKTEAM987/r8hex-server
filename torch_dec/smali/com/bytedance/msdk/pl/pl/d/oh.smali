@@ -1,0 +1,36 @@
+.class public Lcom/bytedance/msdk/pl/pl/d/oh;
+.super Lcom/bytedance/msdk/pl/pl/d/j;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 8
+    invoke-direct {p0}, Lcom/bytedance/msdk/pl/pl/d/j;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public j(Lcom/bytedance/msdk/core/iy/g;I)Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-ne p2, v0, :cond_0
+
+    .line 13
+    invoke-virtual {p0}, Lcom/bytedance/msdk/pl/pl/d/oh;->pl()V
+
+    return v0
+
+    .line 16
+    :cond_0
+    invoke-super {p0, p1, p2}, Lcom/bytedance/msdk/pl/pl/d/j;->j(Lcom/bytedance/msdk/core/iy/g;I)Z
+
+    move-result p1
+
+    return p1
+.end method

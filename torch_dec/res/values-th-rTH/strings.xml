@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">เกี่ยวกับ</string>
+    <string name="app_name">ไฟฉาย</string>
+    <string name="app_name_gq">ไฟฉาย</string>
+    <string name="app_name_gqb">ไฟฉาย</string>
+    <string name="app_name_js">ไฟฉาย</string>
+    <string name="app_name_led">ไฟฉาย</string>
+    <string name="app_name_ss">ไฟฉาย</string>
+    <string name="click_back_return_app_home">คลิกอีกครั้ง เพื่อกลับไปยังหน้าจอหลัก</string>
+    <string name="color_lights">แลนเทิร์น</string>
+    <string name="night_photo">กล้องตรวจการณ์กลางคืน</string>
+    <string name="not_support">อุปกรณ์ในปัจจุบันไม่สนับสนุนฟังก์ชั่นส่องสว่างLED หรือกล้องถูกครอบครอง โปรดใช้แลนเทิร์นเพื่อส่องสว่าง</string>
+    <string name="rate_us">การประเมินผล</string>
+    <string name="recommend">แนะนำบูติก</string>
+    <string name="remaining_battery_can_time_HM">ปริมาณไฟฟ้าที่เหลือสามารถส่องสว่าง %1$s ชั่วโมง %2$s นาที</string>
+    <string name="remaining_battery_can_time_HMs">ปริมาณไฟฟ้าที่เหลือสามารถส่องสว่าง %1$s ชั่วโมง %2$s นาที</string>
+    <string name="remaining_battery_can_time_M">ปริมาณไฟฟ้าที่เหลือสามารถส่องสว่าง %1$s นาที</string>
+    <string name="remaining_battery_can_time_Ms">ปริมาณไฟฟ้าที่เหลือสามารถส่องสว่าง %1$s นาที</string>
+    <string name="sos_lights">SOS</string>
+    <string name="tool_box">กล่องเครื่องมือ</string>
+</resources>

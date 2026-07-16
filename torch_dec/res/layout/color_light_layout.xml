@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/color_ly_left" android:paddingBottom="@dimen/other_color_ly_padding_bottom" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <Button android:id="@id/btn1" android:background="@drawable/lamp3" android:layout_width="@dimen/color_item_w" android:layout_height="@dimen/color_item_h" android:layout_marginTop="@dimen/color_item_margin_v" />
+            <Button android:id="@id/btn2" android:background="@drawable/lamp4" android:layout_width="@dimen/color_item_w" android:layout_height="@dimen/color_item_h" android:layout_marginTop="@dimen/color_item_margin_v" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/color_light_center_ly" android:paddingBottom="@dimen/other_color_ly_padding_bottom" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/color_item_margin_h">
+            <Button android:id="@id/btn3" android:background="@drawable/lamp2" android:layout_width="@dimen/color_item_w" android:layout_height="@dimen/color_item_h" android:layout_marginTop="@dimen/color_item_margin_v" />
+            <Button android:id="@id/btn4" android:background="@drawable/lamp" android:layout_width="@dimen/color_item_w" android:layout_height="@dimen/color_item_h" android:layout_marginTop="@dimen/color_item_margin_v" />
+            <Button android:id="@id/btn5" android:background="@drawable/lamp5" android:layout_width="@dimen/color_item_w" android:layout_height="@dimen/color_item_h" android:layout_marginTop="@dimen/color_item_margin_v" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/color_ly_rigth" android:paddingBottom="@dimen/other_color_ly_padding_bottom" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/color_item_margin_h">
+            <Button android:id="@id/btn6" android:background="@drawable/lamp6" android:layout_width="@dimen/color_item_w" android:layout_height="@dimen/color_item_h" android:layout_marginTop="@dimen/color_item_margin_v" />
+            <Button android:id="@id/btn7" android:background="@drawable/lamp7" android:layout_width="@dimen/color_item_w" android:layout_height="@dimen/color_item_h" android:layout_marginTop="@dimen/color_item_margin_v" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="#19eaff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/other_color_txt_margin_bottom" android:text="@string/color_lights" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

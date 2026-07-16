@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/tab_height">
+        <include android:id="@id/round_spin_view" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" layout="@layout/color_light_layout" />
+        <ImageView android:background="@drawable/other_isolate_line" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="@dimen/other_line_margin_top" android:layout_marginRight="20.0dp" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/other_function_ry_margin">
+            <Button android:id="@id/sos_btn" android:background="@drawable/sos_off" android:layout_width="@dimen/other_sos_btn_width" android:layout_height="@dimen/other_sos_btn_height" android:layout_centerVertical="true" />
+            <Button android:id="@id/camera_btn" android:background="@drawable/night_open_selector" android:layout_width="@dimen/other_sos_btn_width" android:layout_height="@dimen/other_sos_btn_height" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.ibox.flashlight.view.MaterialLayout android:id="@id/color_fragment" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="96.0dp" android:layout_marginBottom="45.0dp" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/color_close" android:background="@drawable/lizi_back_btn_selector" android:visibility="gone" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

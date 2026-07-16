@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">об</string>
+    <string name="app_name">фонарик</string>
+    <string name="app_name_gq">фонарик</string>
+    <string name="app_name_gqb">фонарик</string>
+    <string name="app_name_js">фонарик</string>
+    <string name="app_name_led">фонарик</string>
+    <string name="app_name_ss">фонарик</string>
+    <string name="click_back_return_app_home">клигнить-вернуться-дома</string>
+    <string name="color_lights">иллюминация</string>
+    <string name="night_photo">ночь-фотоаппарат</string>
+    <string name="not_support">нот-поддерживать</string>
+    <string name="rate_us">оцените нас</string>
+    <string name="recommend">отрекомендовать хорошее</string>
+    <string name="remaining_battery_can_time_HM">остальнаый электроток можно осветиться %1$s часов %2$s мигут</string>
+    <string name="remaining_battery_can_time_HMs">остальнаый электроток можно осветиться %1$s часов %2$s минут</string>
+    <string name="remaining_battery_can_time_M">остальнаый электроток можно осветиться %1$s минит</string>
+    <string name="remaining_battery_can_time_Ms">остальнаый электроток можно осветиться %1$s минит</string>
+    <string name="sos_lights">сос</string>
+    <string name="tool_box">шкав для инструмента</string>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mode_item_img_size">42.0dp</dimen>
+    <dimen name="title_height">70.0dp</dimen>
+</resources>

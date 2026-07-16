@@ -1,0 +1,298 @@
+.class public Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/bykv/vk/openvk/api/proto/Bridge;
+.implements Ljava/util/function/Function;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/bykv/vk/openvk/api/proto/Bridge;",
+        "Ljava/util/function/Function<",
+        "Landroid/util/SparseArray<",
+        "Ljava/lang/Object;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private d:Lcom/bykv/vk/openvk/api/proto/ValueSet;
+
+.field private final j:Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;
+
+
+# direct methods
+.method public constructor <init>(Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;)V
+    .locals 0
+
+    .line 23
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 24
+    iput-object p1, p0, Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;->j:Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;
+
+    .line 25
+    sget-object p1, Lcom/bykv/d/d/d/d/j;->d:Lcom/bykv/vk/openvk/api/proto/ValueSet;
+
+    iput-object p1, p0, Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;->d:Lcom/bykv/vk/openvk/api/proto/ValueSet;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 17
+    check-cast p1, Landroid/util/SparseArray;
+
+    invoke-virtual {p0, p1}, Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;->d(Landroid/util/SparseArray;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public call(ILcom/bykv/vk/openvk/api/proto/ValueSet;Ljava/lang/Class;)Ljava/lang/Object;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(I",
+            "Lcom/bykv/vk/openvk/api/proto/ValueSet;",
+            "Ljava/lang/Class<",
+            "TT;>;)TT;"
+        }
+    .end annotation
+
+    .line 38
+    iget-object v0, p0, Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;->j:Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return-object v1
+
+    :cond_0
+    if-eqz p2, :cond_1
+
+    .line 39
+    invoke-interface {p2}, Lcom/bykv/vk/openvk/api/proto/ValueSet;->sparseArray()Landroid/util/SparseArray;
+
+    move-result-object p2
+
+    goto :goto_0
+
+    :cond_1
+    new-instance p2, Landroid/util/SparseArray;
+
+    invoke-direct {p2}, Landroid/util/SparseArray;-><init>()V
+
+    :goto_0
+    const v0, -0x5f5e0f3
+
+    .line 40
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-virtual {p2, v0, p1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    const p1, -0x5f5e0f1
+
+    .line 41
+    invoke-virtual {p2, p1, p3}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    .line 42
+    invoke-virtual {p0, p2}, Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;->d(Landroid/util/SparseArray;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_2
+
+    return-object p1
+
+    :cond_2
+    return-object v1
+.end method
+
+.method public d(Landroid/util/SparseArray;)Ljava/lang/Object;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/util/SparseArray<",
+            "Ljava/lang/Object;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .line 49
+    iget-object v0, p0, Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;->j:Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return-object v1
+
+    .line 50
+    :cond_0
+    invoke-static {p1}, Lcom/bykv/d/d/d/d/j;->d(Landroid/util/SparseArray;)Lcom/bykv/d/d/d/d/j;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/bykv/d/d/d/d/j;->j()Lcom/bykv/vk/openvk/api/proto/ValueSet;
+
+    move-result-object p1
+
+    const v0, -0x5f5e0f3
+
+    .line 51
+    invoke-interface {p1, v0}, Lcom/bykv/vk/openvk/api/proto/ValueSet;->intValue(I)I
+
+    move-result v0
+
+    const/4 v2, 0x0
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
+
+    .line 83
+    :pswitch_0
+    const-class v0, Landroid/os/Bundle;
+
+    invoke-interface {p1, v2, v0}, Lcom/bykv/vk/openvk/api/proto/ValueSet;->objectValue(ILjava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/os/Bundle;
+
+    .line 84
+    iget-object v0, p0, Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;->j:Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;
+
+    invoke-interface {v0, p1}, Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;->onRewardVerify(Landroid/os/Bundle;)V
+
+    goto :goto_0
+
+    .line 80
+    :pswitch_1
+    iget-object p1, p0, Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;->j:Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;
+
+    invoke-interface {p1}, Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;->onAdLeftApplication()V
+
+    goto :goto_0
+
+    .line 77
+    :pswitch_2
+    iget-object p1, p0, Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;->j:Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;
+
+    invoke-interface {p1}, Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;->onAdOpened()V
+
+    goto :goto_0
+
+    .line 74
+    :pswitch_3
+    iget-object p1, p0, Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;->j:Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;
+
+    invoke-interface {p1}, Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;->onVideoError()V
+
+    goto :goto_0
+
+    .line 69
+    :pswitch_4
+    invoke-interface {p1, v2}, Lcom/bykv/vk/openvk/api/proto/ValueSet;->intValue(I)I
+
+    move-result v0
+
+    const/4 v2, 0x1
+
+    .line 70
+    invoke-interface {p1, v2}, Lcom/bykv/vk/openvk/api/proto/ValueSet;->stringValue(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 71
+    iget-object v2, p0, Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;->j:Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;
+
+    invoke-interface {v2, v0, p1}, Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;->onInterstitialFullShowFail(ILjava/lang/String;)V
+
+    goto :goto_0
+
+    .line 66
+    :pswitch_5
+    iget-object p1, p0, Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;->j:Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;
+
+    invoke-interface {p1}, Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;->onSkippedVideo()V
+
+    goto :goto_0
+
+    .line 63
+    :pswitch_6
+    iget-object p1, p0, Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;->j:Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;
+
+    invoke-interface {p1}, Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;->onVideoComplete()V
+
+    goto :goto_0
+
+    .line 60
+    :pswitch_7
+    iget-object p1, p0, Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;->j:Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;
+
+    invoke-interface {p1}, Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;->onAdClose()V
+
+    goto :goto_0
+
+    .line 57
+    :pswitch_8
+    iget-object p1, p0, Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;->j:Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;
+
+    invoke-interface {p1}, Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;->onAdVideoBarClick()V
+
+    goto :goto_0
+
+    .line 54
+    :pswitch_9
+    iget-object p1, p0, Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;->j:Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;
+
+    invoke-interface {p1}, Lcom/bytedance/sdk/openadsdk/mediation/IMediationInterstitialFullAdListener;->onAdShow()V
+
+    :goto_0
+    return-object v1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x2001d
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public values()Lcom/bykv/vk/openvk/api/proto/ValueSet;
+    .locals 1
+
+    .line 30
+    iget-object v0, p0, Lcom/bytedance/sdk/openadsdk/mediation/j/d/j/j;->d:Lcom/bykv/vk/openvk/api/proto/ValueSet;
+
+    return-object v0
+.end method

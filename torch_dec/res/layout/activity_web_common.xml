@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlTitleAll" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="#000000" android:layout_width="match_parent" android:layout_height="60.0dp">
+            <ImageView android:id="@id/ivBack" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="10.0dp" android:src="@drawable/privacy_back" android:layout_centerVertical="true" />
+            <TextView android:textSize="21.0sp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:id="@id/tvNormalTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="70.0dp" android:maxLines="1" android:layout_toRightOf="@id/ivBack" android:layout_centerInParent="true" />
+            <TextView android:textSize="32.0sp" android:textColor="#333" android:gravity="center_vertical" android:id="@id/tvRightText" android:paddingLeft="20.0dp" android:paddingRight="30.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="文字" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/ivRightIcon" android:layout_width="45.0dp" android:layout_height="45.0dp" android:layout_marginRight="30.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <WebView android:id="@id/wbReport" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

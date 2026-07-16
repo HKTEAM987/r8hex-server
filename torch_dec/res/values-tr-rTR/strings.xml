@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">kakkında</string>
+    <string name="app_name">el feneri</string>
+    <string name="app_name_gq">el feneri</string>
+    <string name="app_name_gqb">el feneri</string>
+    <string name="app_name_js">el feneri</string>
+    <string name="app_name_led">el feneri</string>
+    <string name="app_name_ss">el feneri</string>
+    <string name="click_back_return_app_home">tekrar basarak ana ekrana dönebilirsiniz</string>
+    <string name="color_lights">renk ışıkları</string>
+    <string name="night_photo">gece kamerası</string>
+    <string name="not_support">cihaz LED ışığını desteklemiyor yada kamera kullanımda, lütfen renk ışıklarını kullanınız</string>
+    <string name="rate_us">bizi beğenin</string>
+    <string name="recommend">tavsiye edilen</string>
+    <string name="remaining_battery_can_time_HM">kalan pil ışığı %1$s saat %2$s dakika destekler</string>
+    <string name="remaining_battery_can_time_HMs">kalan pil ışığı %1$s saat %2$s dakika destekler</string>
+    <string name="remaining_battery_can_time_M">kalan pil ışığı %1$s dakika destekler</string>
+    <string name="remaining_battery_can_time_Ms">kalan pil ışığı %1$s dakika destekler</string>
+    <string name="sos_lights">SOS</string>
+    <string name="tool_box">araç kutusu</string>
+</resources>

@@ -1,0 +1,27 @@
+.class public interface abstract Lcom/bytedance/sdk/openadsdk/q/d/d$d;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/bytedance/sdk/openadsdk/q/d/d;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "d"
+.end annotation
+
+
+# virtual methods
+.method public abstract d(ZLjava/util/Map;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;)V"
+        }
+    .end annotation
+.end method

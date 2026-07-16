@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/pb_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progressbar_refresh" />
+    <TextView android:textSize="16.0sp" android:textColor="#bcbcbc" android:id="@id/tv_loading" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载..." />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_end" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+        <View android:gravity="start" android:background="#bcbcbc" android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" android:alpha="0.5" />
+        <TextView android:textSize="16.0sp" android:textColor="#bcbcbc" android:gravity="center" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我是有底线的" />
+        <View android:gravity="end" android:background="#bcbcbc" android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" android:alpha="0.5" />
+    </LinearLayout>
+</LinearLayout>

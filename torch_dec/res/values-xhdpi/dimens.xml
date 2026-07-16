@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16.0dp</dimen>
+    <dimen name="anim_img_h">50.0dp</dimen>
+    <dimen name="color_item_h">57.0dp</dimen>
+    <dimen name="color_item_margin_h">35.0dp</dimen>
+    <dimen name="color_item_margin_top">40.0dp</dimen>
+    <dimen name="color_item_margin_v">28.0dp</dimen>
+    <dimen name="color_item_w">48.0dp</dimen>
+    <dimen name="color_layout_h">231.0dp</dimen>
+    <dimen name="main_btn_h">170.0dp</dimen>
+    <dimen name="main_btn_margin">36.0dp</dimen>
+    <dimen name="main_btn_w">170.0dp</dimen>
+    <dimen name="main_fragment_margin_title">14.0dp</dimen>
+    <dimen name="main_text_margin">20.0dp</dimen>
+    <dimen name="main_top_ry">332.0dp</dimen>
+    <dimen name="mode_item_bg_h">110.0dp</dimen>
+    <dimen name="mode_item_bg_margin">7.0dp</dimen>
+    <dimen name="mode_item_img_size">40.0dp</dimen>
+    <dimen name="mode_margin_top">9.0dp</dimen>
+    <dimen name="title_height">65.0dp</dimen>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_privacy_bg_border" android:padding="19.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dp" android:layout_marginRight="26.0dp" android:layout_centerInParent="true">
+        <TextView android:textSize="18.0sp" android:textColor="#333333" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="温馨提示" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="#666666" android:layout_gravity="center" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="不同意服务协议将无法使用我们的产品和服 务，并会退出应用。" />
+        </LinearLayout>
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/user_privacy_ok" android:background="@drawable/shi" android:layout_width="216.0dp" android:layout_height="38.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="20.0dp" android:text="同意并继续" />
+        <TextView android:textSize="18.0sp" android:textColor="#b8b8b8" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/user_privacy_none" android:background="@drawable/fou" android:layout_width="216.0dp" android:layout_height="38.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="20.0dp" android:text="不同意并退出" />
+    </LinearLayout>
+</RelativeLayout>
